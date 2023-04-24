@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'SignUpPage.dart';
+import 'HomePage.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -98,25 +99,35 @@ class LoginPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  GestureDetector(
-                    child: Container(
-                      alignment: Alignment.center,
-                      width: 200,
-                      height: 35,
-                      decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(50)),
-                        color: Color(0xFF2D3250),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.all(2.5),
-                        child: Text(
-                          'Log in',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
+                  Container(
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 40,
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      color: Color(0xFF2D3250),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        TextButton(
+                          child: const Text(
+                            "Sign In",
+                            style: TextStyle(
+                              color: Color(0xFFFFFFFF),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage()),
+                            );
+                          },
                         ),
-                      ),
+                      ],
                     ),
                   ),
                   const SizedBox(
