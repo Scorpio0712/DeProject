@@ -2,6 +2,8 @@ import 'package:carrental_app/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'CarInforPage.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -16,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: const Color(0xFF2D3550),
+        backgroundColor: const Color(0xFF2D3250),
         title: const Text('Hello, Customers'),
         actions: <Widget>[
           Padding(
@@ -66,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MenuButton(context),
+                                builder: (context) => CarInforPage(),
                               ),
                             );
                           },
@@ -87,12 +89,12 @@ class _HomePageState extends State<HomePage> {
                                     height: 100,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Container(
                                   alignment: Alignment.center,
-                                  child: Text(
+                                  child: const Text(
                                     'Yamaha Aerox',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,

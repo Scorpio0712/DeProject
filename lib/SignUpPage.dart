@@ -42,13 +42,13 @@ class SignUpPage extends StatelessWidget {
                     fontSize: 40,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Container(
                 width: 325,
                 height: 500,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
@@ -57,7 +57,7 @@ class SignUpPage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(height: 50),
+                    const SizedBox(height: 50),
                     Container(
                       width: 260,
                       height: 60,
