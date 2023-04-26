@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +45,7 @@ class _HomePageState extends State<HomePage> {
           width: MediaQuery.of(context).size.width,
           color: const Color(0xFFFFFFFF),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.symmetric(
